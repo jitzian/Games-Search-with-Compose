@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Games Search With Compose</string>
+    <string name="cd_search_icon">Search Icon</string>
+    <string name="cd_cast_icon">Icon for cast</string>
+    <string name="cd_up_button">Go to previous screen</string>
+    <string name="cd_clear_icon">Clear search query</string>
+    <string name="search_app_bar_title">Search Games</string>
+    <string name="hint_search_query">Search Games</string>
+    <string name="missing_api_key_snackbar_message">Tmdb Api Key Missing</string>
+    <string name="n_a_TEXT">N/A</string>
+    <string name="time_out_error_TEXT">Your request exceeded the TIME OUT. Please try again</string>
+    <string name="generic_error_TEXT">An error occurred on our end. Please Try Later</string>
+    <string name="loading_dot_dot_dot_TEXT">Loading…</string>
+    <string name="no_internet_connection_TEXT">No Internet Connection…</string>
+    <string name="there_is_no_data_available_TEXT">There is no data available</string>
 </resources>

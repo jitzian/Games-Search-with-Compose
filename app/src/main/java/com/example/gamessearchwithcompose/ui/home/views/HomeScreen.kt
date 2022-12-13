@@ -10,7 +10,7 @@ fun HomeScreen(navigateToSearch: () -> Unit) {
         Scaffold(
             topBar = { HomeTopAppBar(navigateToSearch = navigateToSearch) }
         ) {
-            //TODO: Do I need to put something here?
+            //TODO: Implement recent searches using cache (Room database)
         }
     }
 }

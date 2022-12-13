@@ -8,6 +8,9 @@ import com.example.gamessearchwithcompose.domain.repository.games.GamesRepositor
 import javax.inject.Inject
 
 class GamesRepositoryImpl @Inject constructor(private val restApi: RestApi) : GamesRepository {
+    /**
+     * Fetch collection of games based on query criteria [gameName]
+     * */
     override suspend fun fetchGames(gameName: String): ResultApi {
         return restApi.fetchGames(
             mapOf(
@@ -18,6 +21,9 @@ class GamesRepositoryImpl @Inject constructor(private val restApi: RestApi) : Ga
         )
     }
 
+    /**
+     * Fetch game details based on game [id]
+     * */
     override suspend fun fetchGameDetailsById(id: Int): ResulApiSingleGame {
         return restApi.fetchGameDetailsById(
             id = id.toString(),

@@ -34,14 +34,12 @@ fun SearchScreenState(
 }
 
 @Composable
-//fun SearchScreen(navigateUp: () -> Unit, viewModel: SearchViewModel) {
 fun SearchScreen(
     selectedGameId: (Int) -> Unit,
     navigateUp: () -> Unit,
     viewModel: SearchViewModel,
     uiState: UIState
 ) {
-    //val uiState = viewModel.state
     val keyboardController = LocalSoftwareKeyboardController.current
     val closeKeyboard = {
         keyboardController?.hide()

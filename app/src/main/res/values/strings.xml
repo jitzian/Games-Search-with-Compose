@@ -6,7 +6,6 @@
     <string name="cd_clear_icon">Clear search query</string>
     <string name="search_app_bar_title">Search Games</string>
     <string name="hint_search_query">Search Games</string>
-    <string name="missing_api_key_snackbar_message">Tmdb Api Key Missing</string>
     <string name="n_a_TEXT">N/A</string>
     <string name="time_out_error_TEXT">Your request exceeded the TIME OUT. Please try again</string>
     <string name="generic_error_TEXT">An error occurred on our end. Please Try Later</string>

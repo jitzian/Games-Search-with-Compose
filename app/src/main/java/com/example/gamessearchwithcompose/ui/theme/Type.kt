@@ -1,34 +1,52 @@
 package com.example.gamessearchwithcompose.ui.theme
 
-import androidx.compose.material3.Typography
+import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.gamessearchwithcompose.R
 
 // Set of Material typography styles to start with
+private val MontserratAlternates = FontFamily(
+    Font(R.font.montserrat_alternates_light, FontWeight.Light),
+    Font(R.font.montserrat_alternates_regular, FontWeight.Normal),
+    Font(R.font.montserrat_alternates_medium, FontWeight.Medium),
+    Font(R.font.montserrat_alternates_semibold, FontWeight.SemiBold),
+    Font(R.font.montserrat_alternates_bold, FontWeight.Bold),
+)
+
+// Material typography styles
 val Typography = Typography(
-    bodyLarge = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp,
-        lineHeight = 24.sp,
-        letterSpacing = 0.5.sp
-    )
-    /* Other default text styles to override
-    titleLarge = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 22.sp,
-        lineHeight = 28.sp,
-        letterSpacing = 0.sp
+
+    h4 = TextStyle(
+        fontFamily = MontserratAlternates,
+        fontWeight = FontWeight.W700,
+        fontSize = 32.sp
     ),
-    labelSmall = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Medium,
-        fontSize = 11.sp,
-        lineHeight = 16.sp,
-        letterSpacing = 0.5.sp
+    h5 = TextStyle(
+        fontFamily = MontserratAlternates,
+        fontWeight = FontWeight.W600,
+        fontSize = 24.sp
+    ),
+    h6 = TextStyle(
+        fontFamily = MontserratAlternates,
+        fontWeight = FontWeight.W600,
+        fontSize = 20.sp
+    ),
+    subtitle1 = TextStyle(
+        fontFamily = MontserratAlternates,
+        fontWeight = FontWeight.W600,
+        fontSize = 16.sp
+    ),
+    subtitle2 = TextStyle(
+        fontFamily = MontserratAlternates,
+        fontWeight = FontWeight.W500,
+        fontSize = 14.sp
+    ),
+    body2 = TextStyle(
+        fontFamily = MontserratAlternates,
+        fontSize = 14.sp
     )
-    */
 )
